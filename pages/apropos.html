@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Exo+2:wght@300;400;500;600;700&family=Audiowide&display=swap" rel="stylesheet">
-    <link href="tooplate-neural-style.css" rel="stylesheet">
+    <link href="../tooplate-neural-style.css" rel="stylesheet">
     
 <!--
 
@@ -57,9 +57,9 @@ Free HTML CSS Template
             
             <div class="nav-menu" id="nav-menu">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="pages/apropos.html">ABOUT</a></li>
-                    <li><a href="pages/projets.html">PROJECTS</a></li>
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./apropos.html">ABOUT</a></li>
+                    <li><a href="./projets.html">PROJECTS</a></li>
                     <li><a href="#skills">SKILLS</a></li>
                     <li><a href="#contact">CONTACT</a></li>
                 </ul>
@@ -67,138 +67,14 @@ Free HTML CSS Template
         </div>
     </nav>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="glitch" data-text="Hugo ALMAZAN-LAFORET">Hugo ALMAZAN-LAFORET</h1>
-            <p class="subtitle">Développeur informatique</p>
-        </div>
-        <a href="#about" class="scroll-btn">
-            <div class="scroll-btn-inner">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
-                </svg>
-            </div>
-        </a>
-    </section>
-
-    <section id="about" class="fade-in">
-        <h2 class="section-title">ABOUT ME</h2>
-        <div class="about-container">
-            <div class="about-image">
-                <div class="profile-img-wrapper">
-                    <div class="profile-img">
-                        <span>AI</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about-content">
-                <h3>Crafting Digital Experiences</h3>
-                <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 20px;">
-                    I'm a passionate web developer specializing in creating cutting-edge digital experiences 
-                    that merge art with technology. My work focuses on building neural network-inspired 
-                    interfaces that push the boundaries of web design.
-                </p>
-                <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-secondary);">
-                    With over 5 years of experience in frontend development, I've mastered the art of 
-                    transforming complex ideas into intuitive, visually stunning web applications. 
-                    My expertise spans from responsive design to advanced animations and WebGL implementations.
-                </p>
-                <div class="about-stats">
-                    <div class="stat-card">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">Projects</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">Years Exp</div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-label">Clients</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="fade-in">
-        <h2 class="section-title">PROJECTS</h2>
-        <div class="projects-grid">
-            <div class="glass-card project-card">
-                <h3 style="color: var(--primary);">AI Dashboard</h3>
-                <p style="color: var(--text-secondary);">Real-time analytics with neural network visualizations and predictive modeling</p>
-            </div>
-            <div class="glass-card project-card">
-                <h3 style="color: var(--secondary);">Quantum UI</h3>
-                <p style="color: var(--text-secondary);">Experimental interface system inspired by quantum computing principles</p>
-            </div>
-            <div class="glass-card project-card">
-                <h3 style="color: var(--accent);">Cyber Portal</h3>
-                <p style="color: var(--text-secondary);">Immersive web experience with advanced WebGL and Three.js effects</p>
-            </div>
-            <div class="glass-card project-card">
-                <h3 style="color: var(--primary);">Data Stream</h3>
-                <p style="color: var(--text-secondary);">Live data visualization platform with real-time streaming capabilities</p>
-            </div>
-            <div class="glass-card project-card">
-                <h3 style="color: var(--secondary);">Neon Grid</h3>
-                <p style="color: var(--text-secondary);">Cyberpunk-themed design system with glowing components and animations</p>
-            </div>
-            <div class="glass-card project-card">
-                <h3 style="color: var(--accent);">Matrix View</h3>
-                <p style="color: var(--text-secondary);">3D data exploration tool with virtual reality integration support</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="fade-in">
-        <h2 class="section-title">SKILLS</h2>
-        <div class="skills-container">
-            <div class="skill-node">
-                <span>HTML5</span>
-            </div>
-            <div class="skill-node">
-                <span>CSS3</span>
-            </div>
-            <div class="skill-node">
-                <span>JavaScript</span>
-            </div>
-            <div class="skill-node">
-                <span>React</span>
-            </div>
-            <div class="skill-node">
-                <span>WebGL</span>
-            </div>
-            <div class="skill-node">
-                <span>Three.js</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="fade-in">
-        <h2 class="section-title">CONTACT</h2>
-        <form class="contact-form glass-card">
-            <div class="form-group">
-                <input type="text" placeholder="Your Name" required>
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Your Email" required>
-            </div>
-            <div class="form-group">
-                <textarea rows="5" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="neural-btn">SEND MESSAGE</button>
-        </form>
-    </section>
-
     <footer>
         <div class="footer-content">
             <div class="footer-section">
                 <h3>Navigation</h3>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./apropos.html">About</a></li>
+                    <li><a href="./projets.html">Projects</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
