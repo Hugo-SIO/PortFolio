@@ -1,0 +1,76 @@
+body {
+  background-color: white;
+  margin: 0; /* utile pour éviter un bord noir si body avait un margin */
+  font-family: sans-serif;
+}
+
+
+/* Container global */
+.projetsSection {
+  background-color: white;
+  padding: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Titre */
+.titre {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Liste */
+.liste {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Carte projet */
+.carte {
+  background: #f6f6f6;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: 0.25s ease;
+  text-align: center;
+}
+
+.carte:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Nom du repo */
+.nom {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+.filtreContainer {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.select {
+  padding: 6px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.langage {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 8px 0;
+}
+
