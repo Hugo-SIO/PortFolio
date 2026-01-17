@@ -46,3 +46,14 @@
 .contact-form button:hover {
   background-color: #3747b2;
 }
+
+.contact-form button:disabled {
+  background-color: #8b9ec1;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+}
