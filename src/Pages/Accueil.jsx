@@ -1,42 +1,48 @@
-import { motion } from "framer-motion";
-// Suppression de shadcn/ui car non installé
+import React from "react";
+import "./Accueil.css"; // On utilisera ce fichier pour le CSS
 
 export default function Accueil() {
   return (
-    <div>
-      <motion.h1
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-center"
-      >
-        Bienvenue sur mon Portfolio
-      </motion.h1>
+    <div className="container">
+      {/* Hero Section */}
+      <section className="hero">
+        <h1>Développeur Back-End • Étudiant BTS SIO</h1>
+        <p>
+          Bonjour ! J'ai 20 ans et je suis passionné par le développement back-end. 
+          J'ai réalisé plusieurs projets lors de mes stages et missions.
+        </p>
+      </section>
 
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.3, duration: 0.6 }}
-        className="text-lg max-w-2xl text-center text-gray-700"
-      >
-        Je suis un étudiant de 20 ans en 2ᵉ année de BTS SIO, passionné par le développement
-        informatique, particulièrement la partie back‑end. Au cours de mes stages et missions
-        d'intérim, j'ai pu réaliser plusieurs projets concrets, que vous pouvez retrouver sur
-        la page dédiée.
-      </motion.p>
+      {/* Cards Section */}
+      <section className="cards">
+        <div className="card">
+          <div className="icon">🛠️</div>
+          <h3>Mes Projets</h3>
+          <p>Applications web et back-end réalisés en BTS et en autonomie.</p>
+        </div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-        className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl"
-      >
-        <div className="rounded-2xl shadow-md p-4"><div className="flex flex-col items-center text-center">$1</div></div>
+        <div className="card">
+          <div className="icon">💻</div>
+          <h3>Compétences</h3>
+          <p>Node.js, PHP, MySQL, Git, API REST, Docker (bases).</p>
+        </div>
 
-        <div className="rounded-2xl shadow-md p-4"><div className="flex flex-col items-center text-center">$1</div></div>
+        <div className="card">
+          <div className="icon">📄</div>
+          <h3>Mon Parcours</h3>
+          <p>BTS SIO SLAM • Stages et missions d'intérim • À la recherche de nouvelles opportunités.</p>
+        </div>
+      </section>
 
-        <div className="rounded-2xl shadow-md p-4"><div className="flex flex-col items-center text-center">$1</div></div>
-      </motion.div>
+      {/* Stack / Compétences */}
+      <section className="stack">
+        <span>Node.js</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Git</span>
+        <span>API REST</span>
+        <span>Docker</span>
+      </section>
     </div>
   );
 }

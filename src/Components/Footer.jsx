@@ -5,8 +5,8 @@ function Footer() {
     <footer className="footer">
       <p>© {new Date().getFullYear()} – Portfolio Hugo Almazan-Laforet – Tous droits réservés.</p>
       <div className="footer-links">
-        <a href="https://github.com/" target="_blank">GitHub</a>
-        <a href="mailto:tonmail@example.com">Contact</a>
+        <a href="https://github.com/Hugo-SIO" target="_blank">GitHub</a>
+        <a href="mailto:hugo.almazanlaforet@gmail.com">Contact</a>
       </div>
     </footer>
   );
