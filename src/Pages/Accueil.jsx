@@ -6,7 +6,7 @@ export default function Accueil() {
     <div className="container">
       {/* Hero Section */}
       <section className="hero">
-        <h1>Développeur Back-End • Étudiant BTS SIO</h1>
+        <h1>Développeur Back-End • Hugo Almazan-Laforet</h1>
         <p>
           Bonjour ! J'ai 20 ans et je suis passionné par le développement back-end. 
           J'ai réalisé plusieurs projets lors de mes stages et missions.

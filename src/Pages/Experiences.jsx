@@ -4,7 +4,7 @@ import "./Experiences.css";
 export default function Experiences() {
   const experiences = [
     {
-      entreprise: "KLine LIMA, 01150 Saint-Vulbas",
+      entreprise: "K-Line LIMA, 01150 Saint-Vulbas",
       icon: "KLine.png",
       missions: [
         {
