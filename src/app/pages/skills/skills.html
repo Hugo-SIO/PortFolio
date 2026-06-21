@@ -1,1 +1,24 @@
-<p>skills works!</p>
+<section class="section">
+  <div class="container">
+    <span class="eyebrow"><lucide-icon name="code-2" [size]="14"></lucide-icon> Stack technique</span>
+    <h2 class="section-title">Compétences & Stack</h2>
+    <p class="section-lead">Technologies maîtrisées au fil de mes projets en formation et en entreprise.</p>
+
+    <div class="skills-grid">
+      @for (group of groups; track group.title; let i = $index) {
+        <div class="card">
+          <div class="skill-header">
+            <div class="icon-tile" [class]="'g' + ((i % 3) + 1)"><lucide-icon [name]="group.icon" [size]="22"></lucide-icon></div>
+            <h3>{{ group.title }}</h3>
+          </div>
+          @for (skill of group.skills; track skill.name) {
+            <div class="bar-row">
+              <div class="bar-label"><span>{{ skill.name }}</span><span>{{ skill.level }}%</span></div>
+              <div class="bar-track"><div class="bar-fill" [style.width.%]="skill.level"></div></div>
+            </div>
+          }
+        </div>
+      }
+    </div>
+  </div>
+</section>
