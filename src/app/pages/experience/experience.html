@@ -9,7 +9,12 @@
         <div class="timeline-item">
           <span class="timeline-icon"><lucide-icon [name]="exp.icon" [size]="18"></lucide-icon></span>
           <span class="timeline-date">{{ exp.date }}</span>
-          <h3>{{ exp.role }}</h3>
+          <h3 class="timeline-title">
+            @if(exp.logo){
+                <img [src]="exp.logo" class="company-logo" alt="logo {{ exp.company }}">
+            }
+            {{ exp.role }}
+          </h3>
           <p class="timeline-sub"><lucide-icon name="map-pin" [size]="13"></lucide-icon> {{ exp.company }}</p>
           @if (exp.description) { <p>{{ exp.description }}</p> }
         </div>
@@ -26,7 +31,12 @@
         <div class="timeline-item">
           <span class="timeline-icon"><lucide-icon [name]="exp.icon" [size]="18"></lucide-icon></span>
           <span class="timeline-date">{{ exp.date }}</span>
-          <h3>{{ exp.role }}</h3>
+          <h3 class="timeline-title">
+            @if(exp.logo){
+                <img [src]="exp.logo" class="other-company" alt="logo {{ exp.company }}">
+            }
+            {{ exp.role }}
+          </h3>
           <p class="timeline-sub"><lucide-icon name="map-pin" [size]="13"></lucide-icon> {{ exp.company }}</p>
           <p>{{ exp.description }}</p>
         </div>
