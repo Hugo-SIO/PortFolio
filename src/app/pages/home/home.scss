@@ -1,0 +1,20 @@
+.hero { position: relative; min-height: calc(100vh - 76px); display: flex; align-items: center; overflow: hidden; }
+.blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.3; z-index: 0; }
+.blob-1 { width: 440px; height: 440px; background: var(--primary); top: -120px; right: -100px; }
+.blob-2 { width: 340px; height: 340px; background: var(--coral); bottom: -80px; right: 15%; }
+
+.hero-inner { position: relative; z-index: 1; max-width: 740px; }
+.avatar {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--gradient-1); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.3rem;
+  margin-bottom: 24px; box-shadow: var(--shadow);
+}
+.hero-name { font-size: clamp(2.4rem, 6vw, 4rem); line-height: 1.08; margin-bottom: 16px; font-weight: 800; }
+.hero-role { font-family: var(--font-mono); color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px; }
+.hero-lead { font-size: 1.08rem; margin-bottom: 28px; }
+.hero-tags { display: flex; gap: 10px; margin-bottom: 36px; }
+.hero-tags .tag { display: inline-flex; align-items: center; gap: 6px; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+.hero-actions .btn { gap: 8px; }
