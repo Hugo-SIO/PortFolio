@@ -1,0 +1,15 @@
+.motivation-grid, .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+
+.parcours-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; }
+.parcours-block h3 { display: flex; align-items: center; gap: 10px; font-size: 1.05rem; margin-bottom: 16px; color: var(--primary); }
+
+.lang-grid { max-width: 560px; }
+
+.learned-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 48px; }
+.learned-grid h3 { margin-bottom: 20px; }
+.check-list { list-style: none; padding: 0; margin: 0; }
+.check-list li { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; color: var(--text); }
+.check-list li lucide-icon { color: var(--teal); flex-shrink: 0; }
+
+.cert-card h3 { font-size: 1.05rem; margin-bottom: 4px; }
+.closing-card p:last-child { margin-bottom: 0; }
