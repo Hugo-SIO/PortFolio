@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
+  standalone: true,
+  imports: [FormsModule, LucideAngularModule],
   templateUrl: './contact.html',
-  styleUrl: './contact.scss',
+  styleUrl: './contact.scss'
 })
 export class Contact {
-
+  onSubmit() {}
 }

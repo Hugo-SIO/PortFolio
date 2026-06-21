@@ -1,1 +1,29 @@
-<p>contact works!</p>
+<section class="section">
+  <div class="container">
+    <span class="eyebrow"><lucide-icon name="mail" [size]="14"></lucide-icon> Contact</span>
+    <h2 class="section-title">Discutons de votre projet</h2>
+    <p class="section-lead">Actuellement à la recherche d'une alternance en développement web / DevOps.</p>
+
+    <div class="contact-grid">
+      <div class="card contact-links">
+        <a class="contact-link" href="mailto:hugo.almazanlaforet@gmail.com">
+          <span class="icon-tile g1"><lucide-icon name="mail" [size]="20"></lucide-icon></span>
+          hugo.almazanlaforet&#64;gmail.com
+        </a>
+        <a class="contact-link" href="https://www.linkedin.com/in/hugo-almazan-laforet-667459292/" target="_blank" rel="noopener">
+          <span class="icon-tile g2"><lucide-icon name="linkedin" [size]="20"></lucide-icon></span>
+          LinkedIn
+        </a>
+      </div>
+
+      <form class="card contact-form" (ngSubmit)="onSubmit()">
+        <input type="text" name="name" ngModel placeholder="Nom" required />
+        <input type="email" name="email" ngModel placeholder="Email" required />
+        <textarea name="message" ngModel rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="btn btn-primary">
+          Envoyer <lucide-icon name="send" [size]="16"></lucide-icon>
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
