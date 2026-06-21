@@ -1,1 +1,36 @@
-<p>experience works!</p>
+<section class="section">
+  <div class="container">
+    <span class="eyebrow"><lucide-icon name="briefcase" [size]="14"></lucide-icon> Mes expériences</span>
+    <h2 class="section-title">Parcours professionnel</h2>
+    <p class="section-lead">Stages et missions d'intérim réalisés au sein de l'entreprise K-Line LIMA, sur l'application interne BeSafe.</p>
+
+    <div class="timeline">
+      @for (exp of klineExperiences; track exp.date) {
+        <div class="timeline-item">
+          <span class="timeline-icon"><lucide-icon [name]="exp.icon" [size]="18"></lucide-icon></span>
+          <span class="timeline-date">{{ exp.date }}</span>
+          <h3>{{ exp.role }}</h3>
+          <p class="timeline-sub"><lucide-icon name="map-pin" [size]="13"></lucide-icon> {{ exp.company }}</p>
+          @if (exp.description) { <p>{{ exp.description }}</p> }
+        </div>
+      }
+    </div>
+  </div>
+</section>
+
+<section class="section section-soft">
+  <div class="container">
+    <span class="eyebrow"><lucide-icon name="compass" [size]="14"></lucide-icon> Autres expériences</span>
+    <div class="timeline">
+      @for (exp of otherExperiences; track exp.date) {
+        <div class="timeline-item">
+          <span class="timeline-icon"><lucide-icon [name]="exp.icon" [size]="18"></lucide-icon></span>
+          <span class="timeline-date">{{ exp.date }}</span>
+          <h3>{{ exp.role }}</h3>
+          <p class="timeline-sub"><lucide-icon name="map-pin" [size]="13"></lucide-icon> {{ exp.company }}</p>
+          <p>{{ exp.description }}</p>
+        </div>
+      }
+    </div>
+  </div>
+</section>
