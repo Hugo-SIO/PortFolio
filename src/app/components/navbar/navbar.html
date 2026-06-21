@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<nav class="navbar">
+  <div class="container navbar-inner">
+    <a routerLink="/" class="logo" (click)="closeMenu()">Hugo<span class="gradient-text">.</span></a>
+
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <lucide-icon [name]="menuOpen() ? 'x' : 'menu'" [size]="22"></lucide-icon>
+    </button>
+
+    <div class="nav-links" [class.open]="menuOpen()">
+      <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">
+        <lucide-icon name="user" [size]="16"></lucide-icon> À propos
+      </a>
+      <a routerLink="/experience" routerLinkActive="active" (click)="closeMenu()">
+        <lucide-icon name="briefcase" [size]="16"></lucide-icon> Expériences
+      </a>
+      <a routerLink="/skills" routerLinkActive="active" (click)="closeMenu()">
+        <lucide-icon name="code-2" [size]="16"></lucide-icon> Compétences
+      </a>
+      <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">
+        <lucide-icon name="layers" [size]="16"></lucide-icon> Projets
+      </a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">
+        <lucide-icon name="mail" [size]="16"></lucide-icon> Contact
+      </a>
+    </div>
+  </div>
+</nav>
