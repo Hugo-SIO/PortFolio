@@ -7,5 +7,6 @@ export const routes: Routes = [
   { path: 'projects/:id', loadComponent: () => import('./pages/project-detail/project-detail').then(m => m.ProjectDetail) },
   { path: 'skills', loadComponent: () => import('./pages/skills/skills').then(m => m.Skills) },
   { path: 'contact', loadComponent: () => import('./pages/contact/contact').then(m => m.Contact) },
+  { path: 'experience', loadComponent: () => import('./pages/experience/experience').then(m => m.Experience) },
   { path: '**', redirectTo: '' }
 ];
